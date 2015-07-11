@@ -10,7 +10,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.android.launcher3"
+        applicationId "com.nicaiya.launcher"
         minSdkVersion 16
         targetSdkVersion 21
         versionCode 1

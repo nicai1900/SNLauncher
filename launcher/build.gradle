@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 
+
 android {
     compileSdkVersion 21
     buildToolsVersion "22.0.1"
@@ -15,6 +16,12 @@ android {
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
+
+        buildConfigField "String", "AUTHORITY", "\"${applicationId}.provider\""
+
+        //Reference them in .xml files.
+        resValue "string", "authority", "${applicationId}.provider"
+
     }
     buildTypes {
         release {

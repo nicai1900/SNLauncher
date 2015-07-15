@@ -1,6 +1,9 @@
 package nicaiya.snlauncher;
 
+import android.support.test.uiautomator.By;
 import android.support.test.uiautomator.UiDevice;
+import android.support.test.uiautomator.UiObject2;
+import android.support.test.uiautomator.Until;
 import android.test.InstrumentationTestCase;
 
 /**
@@ -15,6 +18,11 @@ public class LauncherTester extends InstrumentationTestCase {
         super.setUp();
 
         device = UiDevice.getInstance(getInstrumentation());
+
+        device.wait(Until.hasObject(By.desc("Apps")), 3000);
+
+        UiObject2 appsButton = device.findObject(By.desc("Apps"));
+        appsButton.click();
     }
 
     public void testChangePage() throws Exception {

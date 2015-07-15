@@ -8,7 +8,7 @@
     </facet>
     <facet type="android" name="Android">
       <configuration>
-        <option name="SELECTED_BUILD_VARIANT" value="autoTestConfigDebug" />
+        <option name="SELECTED_BUILD_VARIANT" value="AutoTestConfigDebug" />
         <option name="SELECTED_TEST_ARTIFACT" value="_android_test_" />
         <option name="ASSEMBLE_TASK_NAME" value="assembleAutoTestConfigDebug" />
         <option name="COMPILE_JAVA_TASK_NAME" value="compileAutoTestConfigDebugSources" />
